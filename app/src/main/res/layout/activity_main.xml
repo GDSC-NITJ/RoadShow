@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6080B1"
+    android:background="#E8D698"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="30dp"
-        app:cardBackgroundColor="#45C6C6"
+        app:cardBackgroundColor="#E3D3D3"
         app:cardCornerRadius="20dp"
         android:layout_margin="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,24 +29,26 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="60dp"
                 android:background="@drawable/round_shape"
-                android:text="Prasant Poonia"
+                android:text="Android"
+                android:textSize="32sp"
                 android:textStyle="bold"
-                android:textSize="26sp"
                 app:layout_constraintEnd_toEndOf="@id/CardViewLayout"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintLeft_toRightOf="@id/imageView"
+                app:layout_constraintTop_toTopOf="@id/CardViewLayout" />
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="@drawable/round_shape"
                 app:layout_constraintStart_toStartOf="@id/CardViewLayout"
                 app:layout_constraintTop_toTopOf="@id/CardViewLayout"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@drawable/ic_baseline_android_24" />
 
 
             <TextView
@@ -68,16 +70,16 @@
                 android:id="@+id/tvEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="prasant.cs.20@nitj.ac.in"
+                android:background="@drawable/round_shape"
+                android:text="android@google.com"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:background="@drawable/round_shape"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.766"
+                app:layout_constraintHorizontal_bias="0.7"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.274" />
+                app:layout_constraintVertical_bias="0.273" />
 
             <TextView
                 android:id="@+id/tvAddressInfo"
@@ -100,14 +102,14 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/round_shape"
                 android:text="MBH-B NIT JALANDHAR"
-                android:textSize="22sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.857"
+                app:layout_constraintHorizontal_bias="0.823"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.38" />
+                app:layout_constraintVertical_bias="0.378" />
 
             <TextView
                 android:id="@+id/tvBioInfo"
@@ -125,8 +127,8 @@
             <TextView
                 android:id="@+id/tvBio"
                 android:layout_width="322dp"
-                android:layout_height="288dp"
-                android:text="Pro stackoverflow surfer"
+                android:layout_height="200dp"
+                android:text="@string/androidBio"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -134,7 +136,20 @@
                 app:layout_constraintHorizontal_bias="0.462"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.914" />
+                app:layout_constraintVertical_bias="0.75" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:text="Profile"
+                android:backgroundTint="#45C54A"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.859"
+                app:layout_constraintStart_toStartOf="parent" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

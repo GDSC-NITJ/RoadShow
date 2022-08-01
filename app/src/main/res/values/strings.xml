@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Portfolio</string>
+    <string name="androidBio">Android is an open source and Linux-based Operating System
+        for mobile devices</string>
 </resources>
