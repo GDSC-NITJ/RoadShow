@@ -6,4 +6,118 @@
     android:layout_height="match_parent"
     tools:context=".Profile">
 
+
+    <TextView
+        android:id="@+id/titleInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Project Title:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Portfolio"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.248"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/aboutInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Project Info:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This Project is made for demo purpose"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436"
+        tools:ignore="HardcodedText" />
+
+    <!--<TextView
+        android:id="@+id/techInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tech Stack Used:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Studio"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617"
+        tools:ignore="HardcodedText" />
+        -->
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilAge"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="300dp"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:text="Android Studio"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
