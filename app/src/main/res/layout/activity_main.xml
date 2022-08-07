@@ -4,14 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E8D698"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="30dp"
-        app:cardBackgroundColor="#E3D3D3"
         app:cardCornerRadius="20dp"
         android:layout_margin="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,125 +27,148 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="60dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="48dp"
                 android:background="@drawable/round_shape"
+                android:padding="10dp"
                 android:text="Android"
+                android:textColor="@color/white"
                 android:textSize="32sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@id/CardViewLayout"
                 app:layout_constraintLeft_toRightOf="@id/imageView"
                 app:layout_constraintTop_toTopOf="@id/CardViewLayout" />
 
+
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
-                android:padding="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/round_shape"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
                 app:layout_constraintStart_toStartOf="@id/CardViewLayout"
                 app:layout_constraintTop_toTopOf="@id/CardViewLayout"
                 tools:srcCompat="@drawable/ic_baseline_android_24" />
-
 
             <TextView
                 android:id="@+id/tvEmailInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email:"
-                android:textStyle="bold"
-                android:textSize="20sp"
                 android:background="@drawable/round_shape"
+                android:padding="10dp"
+                android:text="Email:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.107"
+                app:layout_constraintHorizontal_bias="0.049"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.274" />
+                app:layout_constraintVertical_bias="0.272" />
 
             <TextView
                 android:id="@+id/tvEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/round_shape"
+                android:padding="10dp"
                 android:text="android@google.com"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.7"
+                app:layout_constraintHorizontal_bias="0.744"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.273" />
+                app:layout_constraintVertical_bias="0.272" />
 
             <TextView
                 android:id="@+id/tvAddressInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Address:"
-                android:textStyle="bold"
-                android:textSize="20sp"
                 android:background="@drawable/round_shape"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:text="Address:"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.116"
+                app:layout_constraintHorizontal_bias="0.053"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.379" />
 
             <TextView
                 android:id="@+id/tvAddress"
+
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/round_shape"
+                android:padding="10dp"
                 android:text="MBH-B NIT JALANDHAR"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.823"
+                app:layout_constraintHorizontal_bias="0.897"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.378" />
+                app:layout_constraintVertical_bias="0.379" />
 
             <TextView
                 android:id="@+id/tvBioInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/round_shape"
+                android:padding="10dp"
                 android:text="Bio:"
+
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintHorizontal_bias="0.046"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tvBio"
-                android:layout_width="322dp"
-                android:layout_height="200dp"
+                android:layout_width="364dp"
+                android:layout_height="190dp"
+                android:background="@drawable/round_shape"
+                android:padding="10dp"
                 android:text="@string/androidBio"
+
+
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.462"
+                app:layout_constraintHorizontal_bias="0.421"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.75" />
+                app:layout_constraintVertical_bias="0.746" />
 
             <Button
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="48dp"
-                android:text="Profile"
+                android:layout_marginBottom="52dp"
                 android:backgroundTint="#45C54A"
+                android:text="Profile"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.859"
+                app:layout_constraintHorizontal_bias="0.839"
                 app:layout_constraintStart_toStartOf="parent" />
 
 
