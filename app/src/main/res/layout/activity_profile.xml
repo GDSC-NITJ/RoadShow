@@ -4,14 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E8D698"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="30dp"
-        app:cardBackgroundColor="#E3D3D3"
         app:cardCornerRadius="20dp"
         android:layout_margin="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,9 +27,11 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="76dp"
-                android:layout_marginEnd="156dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="160dp"
+                android:textColor="@color/white"
                 android:background="@drawable/round_shape"
+                android:padding="10dp"
                 android:text="Project Profile"
                 android:textSize="32sp"
                 android:textStyle="bold"
@@ -41,68 +41,77 @@
 
             <TextView
                 android:id="@+id/tvEmailInfo"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Project Title:"
-                android:textStyle="bold"
-                android:textSize="20sp"
                 android:background="@drawable/round_shape"
+                android:padding="10dp"
+                android:text="Project Title:"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.107"
+                app:layout_constraintHorizontal_bias="0.105"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.274" />
+                app:layout_constraintVertical_bias="0.305" />
 
             <TextView
                 android:id="@+id/tvEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/round_shape"
+                android:padding="10dp"
                 android:text="PortFolio"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.526"
+                app:layout_constraintHorizontal_bias="0.628"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.273" />
+                app:layout_constraintVertical_bias="0.305" />
 
             <TextView
                 android:id="@+id/tvPhoneInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/round_shape"
+                android:padding="10dp"
                 android:text="Description:"
                 android:textSize="20sp"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.115"
+                app:layout_constraintHorizontal_bias="0.102"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.356" />
+                app:layout_constraintVertical_bias="0.404" />
 
             <TextView
                 android:id="@+id/tvPhone"
-                android:layout_width="wrap_content"
+                android:layout_width="197dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:textColor="@color/white"
                 android:background="@drawable/round_shape"
+                android:padding="15dp"
                 android:text="Demo Portfolio App to \nunderstand basic Android"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tvPhoneInfo"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.354" />
+                app:layout_constraintVertical_bias="0.41" />
 
             <TextView
                 android:id="@+id/tvBioInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/round_shape"
+                android:padding="10dp"
+                android:textColor="@color/white"
                 android:text="TechStack:"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -111,18 +120,21 @@
                 app:layout_constraintHorizontal_bias="0.1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.447" />
+                app:layout_constraintVertical_bias="0.533" />
 
             <TextView
                 android:id="@+id/tvTextStack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/round_shape"
+                android:padding="10dp"
                 android:text="Android Development"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@id/tvBioInfo"
                 app:layout_constraintTop_toBottomOf="@id/tvPhone" />
 
@@ -130,7 +142,7 @@
                 android:id="@+id/tvLink"
                 android:layout_width="350dp"
                 android:layout_height="100dp"
-                android:layout_marginBottom="264dp"
+                android:layout_marginBottom="176dp"
                 android:autoLink="web"
                 android:linksClickable="true"
                 android:text="Project Link: \nhttps://github.com/GDSC-NITJ/RoadShow"
@@ -138,20 +150,20 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.576"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvTextStack"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintHorizontal_bias="0.596"
+                app:layout_constraintStart_toStartOf="parent" />
+
             <Button
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="48dp"
-                android:text="Contact"
+                android:layout_marginBottom="68dp"
+                android:textColor="@color/white"
                 android:backgroundTint="#45C54A"
+                android:text="Contact Info"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.859"
+                app:layout_constraintHorizontal_bias="0.814"
                 app:layout_constraintStart_toStartOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
